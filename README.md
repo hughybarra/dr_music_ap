@@ -32,7 +32,7 @@ oh if you're still reading this I implemented a little hidden easter egg. If you
 
 In my experience nothing in programming is really hard, its more of implementing new things and trying new things out that become a challenge. My work flow usually consists of developing something, finding something I have never seen, done, or heard about, investigating, reading documentation, understanding, and then implementing. Since I have been coding whenever i come across something new It generally only takes a week to get up and running efficiently with it. 
 
-So that all being said, I thought the project was fun and time consuming but not hard. There was code to write, and I had to think when building some of the ther functionalities but the test was not hard. 
+So that all being said, I thought the project was fun and time consuming but not hard. There was code to write, and I had to think when building some of the functionality but the test was not hard. 
 
 ## What did you learn? 
 
