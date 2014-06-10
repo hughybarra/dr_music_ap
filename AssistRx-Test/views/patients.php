@@ -3,8 +3,6 @@
 <section class="patients">
     <h1>Patient Listing </h1>
 
-
-
     <table id="patients_table" class="table table-striped patients_table">
         <tr class="">
 
@@ -37,8 +35,6 @@
         <?php endforeach; ?>
 
     </table>
-
-
 
     <div class="pagination_div">
         <div class="col-lg-6 col-lg-offset-2">

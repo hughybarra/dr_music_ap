@@ -4,13 +4,9 @@
 
 	<ul class="list-group report_list col-lg-12 col-lg-offset-1">
 
-
-
         <?php foreach($data->list_all() as $patient): ?>
 
-
         	<li class="list-group-item report_list_item col-lg-10" >
-
 
         		<div class="row col-lg-3 col-lg-offset-2
         						">
@@ -43,15 +39,13 @@
 	        			<a href="<?= $data->get_patient_song($patient->favorite_song_id)['collectionViewUrl'] ?>"> Buy Song</a>
 	        		</div>
         		<?php else: ?>
+
         			<h4>User Does not have song</h4>
         			 <a href="index.php?action=assign_song&patient_id=<?= $patient->patient_id ?>" title="Click to assign a song to <?= $patient->patient_name ?>">Assign Song </a>
+
         		<?php endif; ?>
 
         	</li>
-
-        	<div class="patient_row">
-
-        	</div>
 
         <?php endforeach; ?>
 

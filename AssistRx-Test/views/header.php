@@ -15,8 +15,6 @@
     <link href="css/main.css" rel="stylesheet">
     <!-- END CSS -->
 
-
-
     <!-- JAVASCRIPT -->
     <!-- jquery.min cdn in header for global laod -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
