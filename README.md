@@ -40,7 +40,7 @@ I learned another way to write ajax functionalty and I learned how to build my o
 I also learend that Itunes api only gives sample previews and not whole song plays. which was kind of a bummer. 
 
 
-### What Would If I had more time? 
+### What If I had more time? 
 
 For starters I would probably use a framework and buid it all out again. I enjoy coding in raw php and javascript but there is a lot of security functionality that a framework provides that I would not like to write myself and be able to implement.
 
