@@ -1,6 +1,6 @@
 <!-- The song each patient chose, List the Artist, Album, Link to Buy the Song -->
 
-<h1 class="text-center">Report <small>Enter conami code for a surprise</small></h1>
+<h1 class="text-center">Report <small>Enter konami code for a surprise</small></h1>
 
 	<ul class="list-group report_list col-lg-12 col-lg-offset-1">
 
