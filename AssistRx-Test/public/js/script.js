@@ -3,7 +3,8 @@
 /**
  * Project: assistrx programming test
  * this script helps with the patient page
- *
+ * author Hugh Ybarra
+ * email <hugh.ybarra@gmail.com>
  */
 
 
@@ -24,9 +25,9 @@ window.console = window.console || {log : function(){return false;}};
 	 These functions handle the click events for the page.
 	 */
 
+	// navigation control
 	$('.nav_patients').click(function(e){
-		console.log('patients click');
-
+		// takes us to the patients page
 		window.location = 'index.php?action=home';
 
 		// prevent default and stop propogation prevent the html from doing what they would normally do.
@@ -35,9 +36,9 @@ window.console = window.console || {log : function(){return false;}};
   		e.stopPropagation();
 	});// end patients click function
 
+	// navigation control
 	$('.nav_report').click(function(e){
-		console.log('reports click ');
-
+		// takues us ot the report page
 		window.location = 'index.php?action=report';
 
 		// prevent default and stop propogation prevent the html from doing what they would normally do.
@@ -51,8 +52,6 @@ window.console = window.console || {log : function(){return false;}};
 
 	/* BAACK */
 	$('.pagination_back').click(function(e){
-		console.log('back');
-
 
 		$.ajax({
 			type: 'Post',
@@ -72,7 +71,6 @@ window.console = window.console || {log : function(){return false;}};
 
 	/* NEXT */
 	$('.pagination_next').click(function(e){
-		console.log('next');
 
 		var data = {
 			'data': 'some data'
@@ -83,7 +81,6 @@ window.console = window.console || {log : function(){return false;}};
 			url: 'index.php?action=next',
 			dataType: '',
 			success: function(response){
-				// console.log(response);
 				tableBuilder(response);
 			}
 		});
@@ -95,57 +92,13 @@ window.console = window.console || {log : function(){return false;}};
 	})
 
 	var tableBuilder = function(response){
-		console.log(response);
 		$('.patients_table').empty();
 		$('.patients_table').append(response);
 
 	}// end tablebuilder function
 
-
-	// delete when done
-	$('.my_button').click(function(){
-		console.log('working');
-
-		var data = {
-			'data': 'ajax call data ',
-			'method': 'test'
-		};
-
-		$.ajax({
-			type:'Post',
-			url: 'index.php?action=ajax_controller',
-			data: data,
-			dataType: 'Json',
-			success: function(response){
-				console.log(response);
-			}
-		});
-	});
-
-	$('.song_search_button').click(function(e){
-		console.log('search song');
-
-		var data = {
-			'data': 'test data',
-			'method': 'my_song_search'
-		}
-
-		$.ajax({
-			type: 'Post',
-			url: 'index.php?action=ajax_controller&method=my_song_search',
-			data: data,
-			dataType: 'Json',
-			success: function(response){
-				console.log(response);
-			}
-		});
-
-		e.preventDefault();
-		e.stopPropagation();
-	});
-
-
-	//tst
+	//Cornify plugin
+	//http://www.paulirish.com/2009/cornify-easter-egg-with-jquery/
 	var kkeys = [], konami = "38,38,40,40,37,39,37,39,66,65";
 	$(document).keydown(function(e) {
 	  kkeys.push( e.keyCode );

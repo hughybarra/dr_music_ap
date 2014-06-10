@@ -17,14 +17,9 @@ $(function() {
         $.post('index.php?action=ajax_controller&method=save_song_for_patient',{
             data : {
                 patient_id : '<?php echo $data->patient_id; ?>',
-
-                /*
-                        LEFT OFF HERE. NEED TO FIX THIS VARIABLE MAKE THIS PHP
-                */
                 song_data : song,
             }
         }, function(r) {
-            console.log(r);
 
             // now display the song so the user can see it
             // don't keep the alert here - make it user friendly

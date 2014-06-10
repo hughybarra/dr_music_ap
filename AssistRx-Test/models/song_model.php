@@ -41,6 +41,7 @@ class song_model extends my_model
         // check if song exists in the database
         $result = $this->check_for_existing_song(md5($string_song_data));
 
+        // checks for song in the dtabase
         if (!$result){
 
             // the song does not exist int he database
@@ -58,16 +59,14 @@ class song_model extends my_model
                 'song_artist' => $song_data['artistName'],
                 'song_data'   => json_encode($song_data)
             ));
-
+            // grab the id of lastinsert
             $song_id = $this->db->lastInsertId();
         }
         else{
-            echo 'isset';
 
             // the song already exists in the database.
             $song_object=  $this->get_song_id(md5($string_song_data));
             // set the patients information to set
-
             $song_id = $song_object['song_id'];
         }
 
@@ -85,7 +84,7 @@ class song_model extends my_model
         ));
 
         // check the database for unused songs
-        // if song is not attached toa  user remove it
+        // if song is not attached to a user remove it
         $song_sql = $this->db->prepare("
             DELETE FROM songs
             WHERE song_id NOT IN (
@@ -94,13 +93,16 @@ class song_model extends my_model
         ");
         $song_sql->execute();
 
-
         // if patient didn't exist, return some type of error
         //
         // return rows affected or True ? - up to you!
+        // again here i was not sure what to do because of how i built this function.
+        // the function will always have a patient becuase of the way I built the functionality.
     }
 
-
+    /*
+    *Search the song db with data hash value and return song id it belongs to
+    */
     public function get_song_id($song_hash){
 
         $sql = $this->db->prepare("

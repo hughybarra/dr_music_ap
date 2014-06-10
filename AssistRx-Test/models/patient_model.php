@@ -14,6 +14,10 @@ class patient_model extends my_model
         parent::__construct();
     }
 
+    /*
+    * list al function grabs all patients from the database and returns that object
+    */
+
     public function list_all()
     {
         $sql = $this->db->prepare('select * from patients');
@@ -51,7 +55,6 @@ class patient_model extends my_model
 
     /**
     *Counts total number of patients in database
-    * @author Hugh Ybarra <hugh.ybarra@gmail.com>
     */
     public function count_all_patients(){
         $sql = $this->db->prepare("
@@ -65,8 +68,8 @@ class patient_model extends my_model
     }
 
     /**
-    *Pagination function
-    *
+    *Pagination function. This is the pagination range finder. IT takes a range of numbers to get a specific
+    *set of umbers from the db
     */
     public function get_patient_range($range_one, $range_two){
 
@@ -84,8 +87,7 @@ class patient_model extends my_model
     }
 
     /*
-    *find if patient has a song or not
-    *
+    *find if patient has a song or not and returns that
     */
     public function patient_song($patient_id){
 
