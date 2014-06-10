@@ -53,11 +53,6 @@ The first thing I did wrong in this project in my opinion is I built it for the 
 Thats about it I guess. Thank you for taking the time to read my comments and consider me as an applicant I look forward to hearing from you guys over at AssistRX. Have a good one1 
 
 
-USE THE SOURCE!!!
 
- ::\`--._,'.::.`._.--'/::
- ::::.  ` __::__ '  .::::
- ::::::-:.`'..`'.:-::::::
- ::::::::\ `--' /::::::::
 
 
