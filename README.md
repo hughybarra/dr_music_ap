@@ -2,7 +2,7 @@ Hugh Ybarar Assist RX Code Test
 
 ##What was the test?
 
-The test was a basic prove your skills kind of thing. The comapny requested that I finish building a paritally finished application. The applicaton consisted of two database tables patients, and songs. The client wanted the application to list the patients, and give the user the option of saving a song for each patient. There was a bunch of php and javascript that needed to be implemented. That just about sums up the test.
+The test was a basic prove your skills kind of thing. The company requested that I finish building a paritally finished application. The applicaton consisted of two database tables patients, and songs. The client wanted the application to list the patients, and give the user the option of saving a song for each patient. There was a bunch of php and javascript that needed to be implemented. That just about sums up the test.
 How was the test?
 I think I spent a little more time working on this than I should have haha. I recently graduated and this is the only web related project I had going on at the time so instead of using plugins and libraries I just built things from scratch. I had a lot of fun working on this little project. But then i'm weird like that, coding is fun for me.
 
