@@ -19,11 +19,6 @@ For the ui aspect I went with GetBootstrap. I would consider myself more of a st
 The site is responsive, but I did not finish building the responsive design because this was more of a proof of concept and not a full blown launch project. but it is responsive down to the cellphone and back.
 If you're still reading this I implemented a little hidden easter egg. If you did not find it try entering the konami code on any of the pages. If you don't know what the konami code is just press, up up down down left right left right b a and have fun ^_^
 
-##Was it hard?
-
-In my experience nothing in programming is really hard, its more of implementing new things and trying new things out that become a challenge. My work flow usually consists of developing something, finding something I have never seen, done, or heard about, investigating, reading documentation, understanding, and then implementing. Since I have been coding whenever i come across something new It generally only takes a week to get up and running efficiently with it.
-So that all being said, I thought the project was fun and time consuming but not hard. There was code to write, and I had to think when building some of the functionality but the test was not hard.
-
 ##What did you learn?
 
 I learned another way to write ajax functionality and I learned how to build my own simple dynamic pagination control. I also learned that Itunes api only gives sample previews and not whole song plays. which was kind of a bummer.
